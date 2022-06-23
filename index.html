@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+   
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>Cool Health</title>
+</head>
+<body>
+
+
+
+
+
+
+<header class="hero">
+
+   
+   <div class="logo-box">
+    <img src="./assets/logo_landing.png" class="logo-image" alt="logo">
+   </div>
+
+
+</header>
+
+ 
+   <div class="container py-3 my-3">
+    <div class="container-fluid">
+    <h5 class="text-center about-product">Whether you’re a provider or a patient, TargetCool™ is a game-changer. Practitioners using TargetCool will experience quicker daily patient workflow, smoother procedure experiences, and increased practice revenues. Patients who undergo procedures assisted by TargetCool will appreciate the decreased pain and inflammation they experience.</h5>
+    </div>
+   </div>
+
+   <div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+
+                <ul class="list-unstyled">
+                    
+                    <div class="feature-boxes"><h5 class='font-weight-bold'>Features:</h5>
+                        <ul>
+                            <li>Ergonomic and intuitive</li>
+                            <li>Rapidly cools the skin to the exact temperature you need</li>
+                            <li>Maintains skin cooling for the exact duration you need</li>
+                        </ul>
+                    </div>
+                   
+                </ul>
+
+
+            </div>
+
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    
+                    <div class="feature-boxes"><h5 class='font-weight-bold'>Benefits:</h5>
+                        <ul>
+                            <li>Increased patient comfort</li>
+                            <li>Increased procedure efficiency</li>
+                            <li>Decreased post-procedure bruising and inflammation</li>
+                        </ul>
+                    </div>
+                   
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+   </div>
+
+   <div class="container">
+    <div class="video-wrapper">
+        <div class="play-button" > <img src="./assets/play.png" alt="" class="play" onclick="playPause()">  </div>
+        <video  width='100%' src="./assets/movie.mp4" type="video/mp4" playsinline onloadstart="smallScreenControls()"  id="video" onmouseover="showControls()">
+         </video>
+
+
+    </div>
+
+    <div class="text-center my-3">
+        <h3 class="text-center my-3 bold">Patient Testimonials</h3>
+        <h4 class="text-center  my-3 line-spacer">Patients Jene and Aly discuss their firsthand experience of <br> TargetCool and its benefits.</h4>
+    </div>
+
+   </div>
+
+   <div class="container testimonials">
+    <figure class="figure text-center">
+        <img src="./assets/egb_ellipse.png" alt="provider"class="figure-img img-fluid py-3" alt="Provider">
+        <figcaption class="figure-caption py-3 fig-captions">"All I have to do is input the desired temperature and time into the TargetCool device, point and spray, and within seconds, TargetCool has cooled the target site to my specifications. The device is simple and intuitive, and took little time to learn how to operate and train my staff with it."
+
+           </figcaption>
+
+            <figcaption class="figure-caption py-3 fig-captions"> — Dr. Elizabeth Geddes-Bruce, Westlake Dermatology in Austin, TX</figcaption>
+      </figure>
+
+     <figure class="figure text-center fig-spacer">
+        <img src="./assets/pk_ellipse.png" class="figure-img img-fluid py-3 " alt="Provider">
+        <figcaption class="figure-caption py-3 fig-captions">“There’s an entire universe of medical cooling that CoolHealth is unlocking and bringing to providers and patients. With unprecedented control over the temperature and duration for which a treatment area is cooled, providers can now enjoy vastly more efficient procedures and patients will, for the first time, be able to experience uncomfortable treatments virtually painlessly. CoolHealth’s devices elevate patients’ experiences, providers’ workflows, and practice revenues.”
+        </figcaption>
+
+        <figcaption class="figure-caption py-3 fig-captions "> — Peter Kang, CEO & Co-Founder of CoolHealth</figcaption>
+      </figure>
+    
+   </div>
+
+
+   <div class="container contact-form">
+
+    <h4 class="text-center bold py-3 my-3">Please enter your contact information below to find out more.</h4>
+    <form class="text-center py-3">
+    <div class="mb-3 row justify-content-center">
+        
+        <input type="text" class="form-control form-input " placeholder="Name">
+      </div>
+      <div class="mb-3 row justify-content-center">
+        
+        <input type="text" class="form-control form-input" placeholder="Company">
+      </div>
+    <div class="mb-3 row justify-content-center">
+         <input type="email" class="form-control form-input"  placeholder="Email">
+      </div>
+      <div class="mb-3 row justify-content-center">
+        
+        <input type="tel" class="form-control form-input"  placeholder="Phone">
+      </div>
+      <div class="mb-3 row justify-content-center">
+        
+       
+        <textarea class="form-control form-input"  placeholder="Type a message here. (e.g. 'Please tell me more about CoolHealth's revolutionary new cooling devices.')" rows="6"></textarea>
+      </div>
+
+
+      <button type="button" class="btn submit-button">Submit</button>
+    </form>
+    <div class="text-center py-2 my-2">
+     
+
+
+        <div class="btn-group" role="group" aria-label="newsletter-button">
+            <button type="button" class="btn btn-outline-dark newsletter-button newsletter-button1">Subscribe to  the newsletter</button>
+            
+            <button type="button" class="btn btn-outline-dark newsletter-button newsletter-button2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></button>
+          </div>
+
+
+
+
+    </div>
+    
+
+   </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
