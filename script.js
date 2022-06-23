@@ -54,13 +54,13 @@ function showControls() {
 }
 
 
+video.addEventListener("onload", smallScreenControls, false) 
 
 
   video.addEventListener("click", playPause, false);
 
   video.addEventListener("mouseover", showControls, false)
 
-  video.addEventListener("loadstart", smallScreenControls, false) 
 
 
 
