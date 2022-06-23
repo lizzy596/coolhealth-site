@@ -2,14 +2,14 @@
 const video = document.querySelector('#video');
 
 
-function smallScreenControls() {
+/*function smallScreenControls() {
   let screenWidth = window.innerWidth;
   if(screenWidth <= 480) {
     video.setAttribute("controls", "controls")
   } else {
     return 
   }
-}
+} */
 
 
 
@@ -57,7 +57,7 @@ function showControls() {
 
   video.addEventListener("mouseover", showControls, false)
 
-  video.addEventListener("loadstart", smallScreenControls, false)
+  /*video.addEventListener("loadstart", smallScreenControls, false) */
 
 
 
