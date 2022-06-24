@@ -4,19 +4,6 @@ let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 
 
-/*function smallScreenControls() {
-  let playButton = document.querySelector('.play');
-  let screenWidth = window.innerWidth;
-  if(screenWidth < 481) {
-    playButton.style.opacity = "0";
-    video.setAttribute("controls", "controls")
-    video.setAttribute("muted", "muted")
-    console.log('hello')
-  } else {
-    console.log('goodbye')
-    return 
-  }
-} */
 
 
 
@@ -25,30 +12,7 @@ let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 
 
-/*function playPause() {
-    let playButton = document.querySelector('.play');
-    if (video.paused) {
-     
-      video.setAttribute("controls", "controls")
-      video.autoplay = true;
-      
-      playButton.style.opacity = "0";
 
-    
- 
-     
-    } else {
-      video.pause();
-      video.removeAttribute("controls", "controls")
-      video.removeAttribute("autoplay", "autoplay")
-      
-   
-     
-      playButton.style.opacity = "1";
-      
-      
-    }
-  } */
 
 
   function playPause() {
@@ -112,7 +76,6 @@ function showControls() {
 }
 
 
-//video.addEventListener("onload", smallScreenControls, false) 
 
 
 video.addEventListener("click", playPause, false);
