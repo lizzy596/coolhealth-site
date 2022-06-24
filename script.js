@@ -75,14 +75,18 @@ let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
      
   
 
-    
-  
- 
-     
     } else {
-      video.pause();
-      video.removeAttribute("controls", "controls")
-      video.removeAttribute("autoplay", "autoplay")
+
+      if(isSafari) {
+        video.pause()
+        playButton.style.opacity = "1";
+      } else {
+        video.pause();
+        video.removeAttribute("controls", "controls")
+        video.removeAttribute("autoplay", "autoplay")
+
+      }
+     
       
    
      
