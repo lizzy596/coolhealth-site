@@ -5,11 +5,13 @@ const video = document.querySelector('#video');
 function smallScreenControls() {
   let playButton = document.querySelector('.play');
   let screenWidth = window.innerWidth;
-  if(screenWidth <= 480) {
+  if(screenWidth < 481) {
     playButton.style.opacity = "0";
     video.setAttribute("controls", "controls")
     video.setAttribute("muted", "muted")
+    console.log('hello')
   } else {
+    console.log('goodbye')
     return 
   }
 } 
@@ -57,9 +59,9 @@ function showControls() {
 video.addEventListener("onload", smallScreenControls, false) 
 
 
-  video.addEventListener("click", playPause, false);
+video.addEventListener("click", playPause, false);
 
-  video.addEventListener("mouseover", showControls, false)
+video.addEventListener("mouseover", showControls, false)
 
 
 
