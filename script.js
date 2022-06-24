@@ -59,8 +59,8 @@ let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 
       if(isSafari) {
-        video.muted = true;
-        video.autoplay = true;
+        video.play()
+      
         video.setAttribute('playsinline', 'playsinline');
 
 
