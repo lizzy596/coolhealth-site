@@ -276,7 +276,18 @@ li { list-style-type: disc; }
 
 
 
-@media only screen and (max-width: 413px) {
+@media only screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 480px) {
+  .logo-box {
+    width: 60%;
+  }
+}
+
+
+
+
+@media only screen and (orientation:portrait) and (max-width: 413px) {
     .logo-box {
         width: 80%;
     }
@@ -284,13 +295,7 @@ li { list-style-type: disc; }
 }
 
 
-@media screen and (orientation:landscape)
-and (min-device-width: 319px) 
-and (max-device-width: 480px) {
-  .logo-box {
-    width: 60%;
-  }
-}
+
 
 
 @media only screen and (max-width: 480px) {
