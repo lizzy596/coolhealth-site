@@ -62,6 +62,7 @@ let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         video.play()
       
         video.setAttribute('playsinline', 'playsinline');
+        playButton.style.opacity = "0";
 
 
       } else {
