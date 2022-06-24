@@ -165,6 +165,23 @@
    </div>
 
 
+   <script type="text/javascript">
+    function makeURL(object) {
+      return (window.URL) ? window.URL.createObjectURL(object) :    
+      window.webkitURL.createObjectURL(object);
+    }
+  
+    async function display(videoStream){
+      var myvideo = document.getElementById('video');
+      let blob = await fetch(videoStream).then(r => r.blob());
+      var videoUrl= makeURL(blob);
+      myvideo.src = videoUrl;
+    }
+  
+    display('./assets/movie.mp4');
+  </script>
+
+
 <script src="script.js"></script>
 </body>
 </html>

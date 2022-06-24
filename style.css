@@ -308,10 +308,7 @@ li { list-style-type: disc; }
     }
 
 
-    video::-webkit-media-controls-start-playback-button {
-        display: none!important;
-        -webkit-appearance: none;
-      }
+
 
    
 
