@@ -277,7 +277,7 @@ li { list-style-type: disc; }
 
 
 @media only screen and (orientation:landscape)
-and (min-device-width: 319px) 
+
 and (max-device-width: 480px) {
   .logo-box {
     width: 60%;
