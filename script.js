@@ -23,7 +23,7 @@ function smallScreenControls() {
 
 
 
-/*function playPause() {
+function playPause() {
     let playButton = document.querySelector('.play');
     if (video.paused) {
      
@@ -46,45 +46,9 @@ function smallScreenControls() {
       
       
     }
-  } */
+  } 
 
 
-  function playPause() {
-
-    let userAgent = navigator.userAgent;
-    let playButton = document.querySelector('.play');
-
-
-    if(userAgent.match(/safari/i) && video.paused) {
-      video.muted = true;
-      video.playsinline = true;
-      video.autoplay = true;
-      video.setAttribute('controls', 'controls')
-      playButton.style.opacity = "0";
-    }
-   
-   else if (!userAgent.match(/safari/i) && video.paused) {
-     
-      video.setAttribute("controls", "controls")
-      video.autoplay = true;
-      
-      playButton.style.opacity = "0";
-
-    
- 
-     
-    } else {
-      video.pause();
-      video.removeAttribute("controls", "controls")
-      video.removeAttribute("autoplay", "autoplay")
-      
-   
-     
-      playButton.style.opacity = "1";
-      
-      
-    }
-  }
 
 
 

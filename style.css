@@ -120,9 +120,11 @@ li { list-style-type: disc; }
 
 .video-wrapper {
     position: relative;
-    background-color: green;
     line-height: 0;
     border: none;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
   
 }
 
@@ -136,8 +138,8 @@ li { list-style-type: disc; }
 
     min-width: 100%;
     min-height: 100%;
-    overflow: hidden;
-    margin-bottom: -1px;
+    /*overflow: hidden;
+    margin-bottom: -1px; */
   
    
    
@@ -153,19 +155,19 @@ li { list-style-type: disc; }
 
 
 
-
-
-.play {
-   
-   width: 10%;
-    left: 0%;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    right: 0;
+  .play {
+    position:absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-}
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+
 
 
 .testimonials {
