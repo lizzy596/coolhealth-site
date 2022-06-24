@@ -151,6 +151,12 @@ li { list-style-type: disc; }
     display: none;
   } */
 
+
+
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+
 .play {
    
    width: 10%;
