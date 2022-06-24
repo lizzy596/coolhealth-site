@@ -2,7 +2,7 @@
 const video = document.querySelector('#video');
 
 
-function smallScreenControls() {
+/*function smallScreenControls() {
   let playButton = document.querySelector('.play');
   let screenWidth = window.innerWidth;
   if(screenWidth < 481) {
@@ -14,7 +14,7 @@ function smallScreenControls() {
     console.log('goodbye')
     return 
   }
-} 
+} */
 
 
 
@@ -63,7 +63,7 @@ function showControls() {
 }
 
 
-video.addEventListener("onload", smallScreenControls, false) 
+//video.addEventListener("onload", smallScreenControls, false) 
 
 
 video.addEventListener("click", playPause, false);
