@@ -307,6 +307,12 @@ li { list-style-type: disc; }
         width: 80%;
     }
 
+
+    video::-webkit-media-controls-start-playback-button {
+        display: none!important;
+        -webkit-appearance: none;
+      }
+
    
 
   
