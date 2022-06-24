@@ -1,5 +1,7 @@
 
 const video = document.querySelector('#video');
+let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 
 
 /*function smallScreenControls() {
@@ -23,7 +25,7 @@ const video = document.querySelector('#video');
 
 
 
-function playPause() {
+/*function playPause() {
     let playButton = document.querySelector('.play');
     if (video.paused) {
      
@@ -33,6 +35,47 @@ function playPause() {
       playButton.style.opacity = "0";
 
     
+ 
+     
+    } else {
+      video.pause();
+      video.removeAttribute("controls", "controls")
+      video.removeAttribute("autoplay", "autoplay")
+      
+   
+     
+      playButton.style.opacity = "1";
+      
+      
+    }
+  } */
+
+
+  function playPause() {
+
+    
+    let playButton = document.querySelector('.play');
+    if (video.paused) {
+
+
+      if(isSafari) {
+        video.muted = true;
+        video.autoplay = true;
+        video.setAttribute('playsinline', 'playsinline');
+
+
+      } else {
+        video.setAttribute("controls", "controls")
+        video.autoplay = true;
+        
+        playButton.style.opacity = "0";
+
+      }
+     
+  
+
+    
+  
  
      
     } else {
